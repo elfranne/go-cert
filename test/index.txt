@@ -1,0 +1,3 @@
+V	250516122838Z		00	unknown	/C=US/ST=go-cert region/O=go-cert cert place/OU=go-cert cert department/CN=go-cert.localhost
+V	000201000000Z		01	unknown	/C=US/ST=go-cert region/O=go-cert cert place/OU=go-cert cert department/CN=go-cert.localhost
+V	20500201000000Z		02	unknown	/C=US/ST=go-cert region/O=go-cert cert place/OU=go-cert cert department/CN=go-cert.localhost

@@ -1,0 +1,26 @@
+[ req ]
+default_bits = 4096
+
+prompt = no
+distinguished_name=req_distinguished_name
+req_extensions = v3_req
+
+[ req_distinguished_name ]
+countryName=US
+stateOrProvinceName=go-cert region
+localityName=go-cert city
+organizationName=go-cert cert place
+organizationalUnitName=go-cert cert department
+commonName=go-cert.localhost
+emailAddress=email@go-cert.localhost
+
+[ alternate_names ]
+DNS.1        = go-cert.localhost
+DNS.2        = www.go-cert.localhost
+DNS.3        = *.go-cert.localhost
+
+[ v3_req ]
+keyUsage=digitalSignature
+basicConstraints=CA:false
+subjectAltName = @alternate_names
+subjectKeyIdentifier = hash
