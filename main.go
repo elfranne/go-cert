@@ -62,7 +62,7 @@ func main() {
 		errors += 1
 		fmt.Printf("CA is missing\n")
 	}
-	if len(leafKey.PublicKey.N.Bytes()) == 0 {
+	if len(leafKey.N.Bytes()) == 0 {
 		errors += 1
 		fmt.Printf("CA is missing\n")
 	}
