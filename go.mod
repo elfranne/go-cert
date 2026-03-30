@@ -1,3 +1,3 @@
 module elfranne/go-cert
 
-go 1.26
+go 1.24
