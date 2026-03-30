@@ -7,7 +7,6 @@ import (
 	"encoding/pem"
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"time"
 )
@@ -23,7 +22,7 @@ func main() {
 	flag.Parse()
 
 	// load and parse cert/CA/key
-	certLoad, err := ioutil.ReadFile(*cert)
+	certLoad, err := os.ReadFile(*cert)
 	if err != nil {
 		fmt.Printf("failed to read cert file: %s\n", err)
 		os.Exit(1)
